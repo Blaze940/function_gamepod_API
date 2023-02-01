@@ -15,7 +15,7 @@
 // });
 
 interface IWishlist {
-    gamesResumeId : Array<string>,
+    gamesResumeId : [string],
     userId : string,
 }
 

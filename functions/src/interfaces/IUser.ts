@@ -18,11 +18,8 @@
 
 interface IUser {
     username: string,
-    firebaseAuthId : string,
+    userId : string,
     //jwToken : string,
-    wishlistId : string,
-    likelistId : string,
-
 }
 
 export{IUser};

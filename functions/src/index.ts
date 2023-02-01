@@ -4,6 +4,9 @@ import * as express from "express";
 import SteamUserResumeRouter from "./routes/SteamUserResumeRoute";
 import ReviewRouter from "./routes/ReviewRoute";
 import GameResumeRouter from "./routes/GameResumeRoute";
+import WishlistRouter from "./routes/WishlistRoute";
+import LikelistRouter from "./routes/LikelistRoute";
+import UserRouter from "./routes/UserRoute";
 //import {addEntry} from "./entryController";
 
 const app  = express();
@@ -17,6 +20,10 @@ const app  = express();
 app.use('/steamUserResumes', SteamUserResumeRouter);
 app.use('/reviews', ReviewRouter);
 app.use('/games', GameResumeRouter);
+app.use('/wishlists', WishlistRouter);
+app.use('/likelists', LikelistRouter);
+app.use('/users', UserRouter);
+
 //Put root route at the end due to
 app.use('/', (req, res) => {
     res.status(200).send(' Everything is working ...');

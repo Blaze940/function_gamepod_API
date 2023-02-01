@@ -14,7 +14,7 @@
 // });
 
 interface ILikelist {
-    gamesResume : Array<string>,
+    gamesResumeId : [string],
     userId : string,
 }
 
