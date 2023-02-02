@@ -36,7 +36,7 @@
 - **GET** AllBySteamGameId (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/reviews/steamGameId/:steamGameId) 
 
 #### GameResumes
-- **GET** OneBySteamGameId (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/gameResumes/steamGameId/:steamGameId) 
+- **GET** OneBySteamGameId (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/games/steamGameId/:steamGameId) 
 
 
 
