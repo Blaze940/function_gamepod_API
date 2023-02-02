@@ -12,7 +12,7 @@
 
 #### Wishlists
 - **GET** ALL (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/wishlists)
-- **GET** OneByUserId OneByUserId (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/wishlists/userId/:userId)
+- **GET** OneByUserId (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/wishlists/userId/:userId)
 - **POST** One (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/wishlists)
 - **PUT** OneByUserId (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/wishlists/userId/:userId)
 - **DELETE** OneByUserId (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/wishlists/userId/:userId)
@@ -20,7 +20,7 @@
 
 #### Likelists
 - **GET** ALL (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/likelists)
-- **GET** OneByUserId OneByUserId (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/likelists/userId/:userId)
+- **GET** OneByUserId (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/likelists/userId/:userId)
 - **POST** One (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/likelists)
 - **PUT** OneByUserId (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/likelists/userId/:userId)
 - **DELETE** OneByUserId (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/likelists/userId/:userId)
