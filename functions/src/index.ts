@@ -26,7 +26,7 @@ app.use('/users', UserRouter);
 
 //Put root route at the end due to
 app.use('/', (req, res) => {
-    res.status(200).send(' Everything is working ...');
+    res.status(200).send(' Gamepod API is working ...');
 })
 //test
 //app.post('/entries', addEntry);
