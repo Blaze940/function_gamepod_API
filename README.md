@@ -1,6 +1,6 @@
 # API ROUTES
 
-## Database table
+## Database tables
 
 #### Users
 - **GET** ALL (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/users)
