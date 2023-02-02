@@ -16,7 +16,7 @@ const gameResumeLightService = {
                 editorName: gameResumeReceived.developers[0],
                 description: gameResumeReceived.short_description,
                 //if gameResumeReceived.price_overview is undefined, then the game is free
-                price: gameResumeReceived.price_overview === undefined ? "Gratuit" : gameResumeReceived.price_overview.final_formatted.replace(/[^\d.,]/g, ""),
+                price: gameResumeReceived.price_overview === undefined ? "0" : gameResumeReceived.price_overview.final_formatted.replace(/[^\d.,]/g, ""),
                 steamGameId: req.params.steamGameId,
                 reviews: []
             }
@@ -27,7 +27,7 @@ const gameResumeLightService = {
                         name: gameResumeReceived.name,
                         description: gameResumeReceived.short_description,
                         editorName: gameResumeReceived.publishers[0],
-                        price: gameResumeReceived.price_overview === undefined ? "Gratuit" : gameResumeReceived.price_overview.final_formatted.replace(/[^\d.,]/g, ""),
+                        price: gameResumeReceived.price_overview === undefined ? "0" : gameResumeReceived.price_overview.final_formatted.replace(/[^\d.,]/g, ""),
                         reviews: response.data,
                     }
                     gameSelf = game;
@@ -40,7 +40,7 @@ const gameResumeLightService = {
         }catch(e){
             return res.status(404).json({message: "Sorry ... Game not found --> " + e});
         }
-    },
+    }
 }
 
 export default gameResumeLightService;

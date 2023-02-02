@@ -19,7 +19,7 @@ const reviewService = {
                                 steamGameId: req.params.steamGameId,
                                 steamReviewId: review.recommendationid,
                                 description: review.review,
-                                rating: review.votes_up,
+                                votedUp: review.voted_up,
                             }
                             reviewsToSend.push(reviewSelf);
                         }).catch((error) => {
