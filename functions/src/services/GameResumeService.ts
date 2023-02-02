@@ -1,10 +1,6 @@
 import {Request, Response} from 'express';
 import axios from "axios";
 import {IGameResume} from "../interfaces/IGameResume";
-// import {db} from "../config/firebase"
-// import IGameResume from "../interfaces/IGameResume";
-
-//use this link for get reviews "https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/reviews/steamGameId"
 
 const gameResumeService = {
     getGameBySteamGameId: async (req: Request, res: Response) => {
