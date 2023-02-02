@@ -1,5 +1,5 @@
 import {Router} from "express";
-import GameResumeController from "../controllers/GameResumeController";
+import GameResumeController from "../controllers/GameResumeLightController";
 
 const router = Router();
 

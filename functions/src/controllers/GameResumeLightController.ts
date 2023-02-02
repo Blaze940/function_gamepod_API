@@ -1,9 +1,9 @@
-import GameResumeService from "../services/GameResumeService";
+import GameResumeService from "../services/GameResumeLightService";
 import {Request,Response} from "express";
 
-const gameResumeController = {
+const gameResumeLightController = {
     getOneBySteamId: (req :Request, res :Response) => { return GameResumeService.getGameBySteamGameId(req, res) },
 }
 
-export default gameResumeController;
+export default gameResumeLightController;
 

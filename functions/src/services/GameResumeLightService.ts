@@ -1,17 +1,17 @@
 import {Request, Response} from 'express';
 import axios from "axios";
-import {IGameResume} from "../interfaces/IGameResume";
+import {IGameResumeLight} from "../interfaces/IGameResumeLight";
 
-const gameResumeService = {
+const gameResumeLightService = {
     getGameBySteamGameId: async (req: Request, res: Response) => {
         try {
-            const gameResume = await axios.get(`https://store.steampowered.com/api/appdetails?appids=${req.params.steamGameId}`);
+            const gameResume = await axios.get(`https://store.steampowered.com/api/appdetails?appids=${req.params.steamGameId}&l=french`);
             const gameResumeReceived = gameResume.data[req.params.steamGameId].data;
             if(gameResumeReceived === undefined){
                 return res.status(404).json({message: "Game not found"});
             }
             
-            let gameSelf : IGameResume = {
+            let gameSelf : IGameResumeLight = {
                 name: gameResumeReceived.name,
                 editorName: gameResumeReceived.developers[0],
                 description: gameResumeReceived.short_description,
@@ -43,4 +43,4 @@ const gameResumeService = {
     },
 }
 
-export default gameResumeService;
+export default gameResumeLightService;
