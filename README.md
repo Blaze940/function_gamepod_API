@@ -35,9 +35,12 @@
 #### Reviews 
 - **GET** AllBySteamGameId (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/reviews/steamGameId/:steamGameId) 
 
-#### GameResumes
-- **GET** OneBySteamGameId (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/games/steamGameId/:steamGameId) 
+#### GameResumes - Light version 
+- **GET** OneBySteamGameId (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/gamesLight/steamGameId/:steamGameId) 
 
+#### GameResumes - Full version (with logo and icon)
+- **GET** OneBySteamGameId (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/gamesFull/steamGameId/:steamGameId) 
+- **GET** OneByGameName (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/gamesFull/gameName/:gameName) 
 
 
 
