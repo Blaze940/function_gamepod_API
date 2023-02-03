@@ -2,6 +2,7 @@
 
 ## Database tables
 
+
 #### Users
 - **GET** ALL (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/users)
 - **GET** OneByUserId (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/users/userId/:userId)
@@ -15,6 +16,8 @@
 - **GET** OneByUserId (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/wishlists/userId/:userId)
 - **POST** One (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/wishlists)
 - **PUT** OneByUserId (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/wishlists/userId/:userId)
+- **PUT** AddOneGame (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/wishlists/userId/:userId/add/gameResumeId/:gameResumeId)
+- **PUT** DeleteOneGame (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/wishlists/userId/:userId/delete/gameResumeId/:gameResumeId)
 - **DELETE** OneByUserId (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/wishlists/userId/:userId)
 
 
@@ -23,8 +26,9 @@
 - **GET** OneByUserId (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/likelists/userId/:userId)
 - **POST** One (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/likelists)
 - **PUT** OneByUserId (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/likelists/userId/:userId)
+- **PUT** AddOneGame (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/likelists/userId/:userId/add/gameResumeId/:gameResumeId)
+- **PUT** DeleteOneGame (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/likelists/userId/:userId/delete/gameResumeId/:gameResumeId)
 - **DELETE** OneByUserId (https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/likelists/userId/:userId)
-
 
 
 ## Models 
