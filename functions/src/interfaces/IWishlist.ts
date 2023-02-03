@@ -1,5 +1,5 @@
 interface IWishlist {
-    gamesResumeId : [string],
+    gamesResumeId : string[],
     userId : string,
 }
 

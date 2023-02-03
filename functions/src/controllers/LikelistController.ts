@@ -14,6 +14,12 @@ const likelistController = {
     updateOne : (req: Request, res: Response) => {
         return likelistService.updateOne(req, res);
     },
+    addGameResumeId : (req: Request, res: Response) => {
+        return likelistService.addGameResumeId(req, res);
+    },
+    deleteGameResumeId : (req: Request, res: Response) => {
+        return likelistService.deleteGameResumeId(req, res);
+    },
     deleteOne : (req: Request, res: Response) => {
         return likelistService.deleteOne(req, res);
     }

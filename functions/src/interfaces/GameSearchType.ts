@@ -1,3 +1,4 @@
+//Type of game retrieved from SteamAPISearch
 interface GameSearchType {
     appid: string,
     name: string,

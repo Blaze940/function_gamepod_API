@@ -1,5 +1,5 @@
 interface ILikelist {
-    gamesResumeId : [string],
+    gamesResumeId : string[],
     userId : string,
 }
 

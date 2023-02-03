@@ -1,3 +1,4 @@
+//GameResume with logo and icon
 interface IGameResumeFull {
     name : string,
     editorName : string,

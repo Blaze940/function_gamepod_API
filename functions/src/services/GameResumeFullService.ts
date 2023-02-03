@@ -8,11 +8,13 @@ import axios from "axios";
 const gameResumeFullService = {
     getOneBySteamGameId: async (req: Request, res: Response) => {
         try{
+            //get gameResumeLight by steamGameId
             const gameResume = await axios.get(`https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/gamesLight/steamGameId/${req.params.steamGameId}`)
             const gameResumeReceived = gameResume.data;
             if(gameResumeReceived === undefined){
                 return res.status(404).json({message: "Game not found"});
             }
+            //prepare gameResume to receive logo and icon
             let gameSelf : IGameResumeFull = {
                 name: gameResumeReceived.name,
                 editorName: gameResumeReceived.editorName,
@@ -60,7 +62,7 @@ const gameResumeFullService = {
                 gamesId.push(gamesResumeReceived[i].appid);
             }
 
-            //Get all games
+            //Get all games and fill with good data
             const gamesToSend : IGameResumeFull[] = [];
             for(let i = 0; i < gamesId.length; i++){
                 await axios.get(`https://us-central1-androidsteam-b9b14.cloudfunctions.net/app/gamesFull/steamGameId/${gamesId[i]}`)

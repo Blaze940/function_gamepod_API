@@ -1,3 +1,4 @@
+//GameResume light
 interface IGameResumeLight {
     name : string,
     editorName : string,
@@ -5,7 +6,6 @@ interface IGameResumeLight {
     price : string,
     steamGameId : string,
     reviews : object
-
 }
 
 export{IGameResumeLight};
